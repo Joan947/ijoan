@@ -1,4 +1,6 @@
-
+.text-zone{
+    width: 40%;
+}
 .stage-cube-count{
     opacity: 0;
     animation: fadeIn 5s 4s forwards;
@@ -22,13 +24,13 @@
         position: absolute;
         width: 200px;
         height: 200px;
-        border: 1px solid #cca300;
+        border: 1px solid #86b616;
         background: #0000000b; 
         font-size: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 0 20px 0px #cca300    ;
+        box-shadow: 0 0 20px 0px #86b616;
     }
     .face1{
         transform: translateZ(100px);

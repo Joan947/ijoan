@@ -22,7 +22,7 @@
             //transform: rotateZ(30deg);
             z-index: 1;
             opacity: 0;
-            animation: fadeIn 12s 12s forwards;  
+            animation: fadeIn 8s 8s forwards;  
                       
         }
         svg{
@@ -32,12 +32,13 @@
                 stroke:#CCA300;
                 stroke-width:1;
                 stroke-miterlimit:2.61313;
+                box-shadow: 0 0 20px 0px #cca300; 
                 
             }
             #draw-svg{
                 stroke-dasharray: 2669;
                 stroke-dashoffset: 2669; 
-                animation: draw 20s ease 4s;
+                animation: draw 12s ease 4s;
                 
                 animation-fill-mode: forwards;
             }
@@ -51,7 +52,7 @@
             height: 400px;
             z-index: 1;
             opacity: 0;
-            animation: fadeIn 8s 15s forwards;
+            animation: fadeIn 8s 10s forwards;
         }
         svg{
             position: absolute;
@@ -65,7 +66,7 @@
             #draw-svg2{
                 stroke-dasharray: 4017;
                 stroke-dashoffset: 4017; 
-                animation: sign 20s ease 12s;
+                animation: sign 12s ease 8s;
                 animation-fill-mode: forwards;
             }
         }

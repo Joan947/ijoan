@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react';
 import './index.scss'
-import LogoTitle from "../../assets/images/logo-s.png";
+//import LogoTitle from "../../assets/images/logo-s.png";
 import {Link} from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
 import Loader from 'react-loaders'
 const Home = ()=> {
     const [letterClass, setLetterClass]= useState('text-animate');
-    const nameArray =['n','a','m','e',' ','i','s'];
-    const jobArray = ['J','o','a','n','a',' ','(','a','l','i','a','s',')','-',' ','J','O','.'];
+    var intro = "name is";
+    const introArray =intro.split('');
+    var name = "Joana (alias)- JO.";
+    const nameArray = name.split('');
 
     useEffect(()=>{
         setTimeout(() => {
@@ -31,13 +33,13 @@ const Home = ()=> {
                     {/* <img src= {LogoTitle} alt="s"/> */}
                     <AnimatedLetters 
                     letterClass={letterClass}
-                    strArray={nameArray}
+                    strArray={introArray}
                     index={15}
                     />
                     <br/>
                     <AnimatedLetters 
                     letterClass={letterClass}
-                    strArray={jobArray}
+                    strArray={nameArray}
                     index={22}
                     />
                 </h1>

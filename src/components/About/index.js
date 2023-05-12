@@ -9,7 +9,8 @@ import Loader from 'react-loaders';
 const About = ()=>{
     
     const [letterClass, setLetterClass]= useState('text-animate');
-    const abtarray = ['A','b','o','u','t',' ','m','e']
+    var abt= "About me"
+    const abtarray = abt.split('');
     
     useEffect(()=>{
         setTimeout(() => {
