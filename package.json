@@ -1,7 +1,7 @@
 {
   "name": "ijoan",
   "version": "0.1.0",
-  "homepage": "https://Joan947.github.io/ijoan",
+  "homepage": "https://Joan947.github.io/ijoan/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
