@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ijoan/static/css/main.db277645.css",
+    "main.js": "/ijoan/static/js/main.ab31da0b.js",
+    "static/js/787.e293a048.chunk.js": "/ijoan/static/js/787.e293a048.chunk.js",
+    "static/media/Helvetica.ttf": "/ijoan/static/media/Helvetica.06113bf748ae7dc33e05.ttf",
+    "static/media/Roboto-Light.ttf": "/ijoan/static/media/Roboto-Light.8be2d1487420548b3b8d.ttf",
+    "static/media/name_logo1.png": "/ijoan/static/media/name_logo1.ab4baeeaecd96b1593d0.png",
+    "static/media/name_logo2.png": "/ijoan/static/media/name_logo2.ca42700423005ebd80a0.png",
+    "static/media/coolvetica-rg.otf": "/ijoan/static/media/coolvetica-rg.3d81d0e1fdbd5f69b232.otf",
+    "static/media/LaBelleAurore-Regular.ttf": "/ijoan/static/media/LaBelleAurore-Regular.bc43b15661f3e942b3f6.ttf",
+    "static/media/o.png": "/ijoan/static/media/o.bf9e5e9275837270ee1b.png",
+    "static/media/j.png": "/ijoan/static/media/j.a9a2f9e99a65a5372a0d.png",
+    "static/media/futura.ttf": "/ijoan/static/media/futura.4e762c29ef7b44ca51cb.ttf",
+    "index.html": "/ijoan/index.html",
+    "main.db277645.css.map": "/ijoan/static/css/main.db277645.css.map",
+    "main.ab31da0b.js.map": "/ijoan/static/js/main.ab31da0b.js.map",
+    "787.e293a048.chunk.js.map": "/ijoan/static/js/787.e293a048.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db277645.css",
+    "static/js/main.ab31da0b.js"
+  ]
+}
