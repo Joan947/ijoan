@@ -45,11 +45,11 @@ const About = ()=>{
                     will be placed in my Projects section soon.
                 </p>
                 <p> 
-                    I available for opportunities to work on challenging and 
+                    I am available for opportunities to work on challenging and 
                     diverse projects in my area of interests.
                 </p>
                 <p>
-                    I will describe myself as ambitious, confident lover of music,
+                    I will describe myself as ambitious, confident, lover of music,
                     and nature.
                 </p>
 
