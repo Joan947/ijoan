@@ -1,0 +1,49 @@
+{
+    "portfolio":[
+        {
+            "cover":"/portfolio/1/h.jpg",
+            "name":"GYE WO DIN",
+            "description":"A brand website designed using HTML, CSS and Vanilla JS",
+            "url":"youtube.com"
+        },
+        {
+            "cover":"/portfolio/1/h.jpg",
+            "name":"Simple Portfolio",
+            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
+            "url":"youtube.com"
+        },
+       
+        {
+            "cover":"/portfolio/1/h.jpg",
+            "name":"E-Commerce",
+            "description":"An react e-commerce site.",
+            "url":"youtube.com"
+        },
+        {
+            "cover":"/portfolio/1/h.jpg",
+            "name":"Simple Portfolio",
+            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
+            "url":"youtube.com"
+        },
+       
+        {
+            "cover":"/portfolio/1/h.jpg",
+            "name":"E-Commerce",
+            "description":"An react e-commerce site.",
+            "url":"youtube.com"
+        },
+        {
+            "cover":"/portfolio/1/h.jpg",
+            "name":"Simple Portfolio",
+            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
+            "url":"youtube.com"
+        },
+       
+        {
+            "cover":"/portfolio/1/h.jpg",
+            "name":"E-Commerce",
+            "description":"An react e-commerce site.",
+            "url":"youtube.com"
+        }
+    ]
+}

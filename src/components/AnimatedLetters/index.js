@@ -13,5 +13,5 @@ const AnimatedLetters = ({letterClass, strArray, index})=>{
         </span>
     );
 }
-
+// index given is a number that delays the animation in second after page loads
 export default AnimatedLetters;

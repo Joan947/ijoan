@@ -1,14 +1,14 @@
 // i decided to do without using gsap for the logo. I used an id for the path to getTotalLenth() for svg path and
 // and implemented manual keyframes in the scss file.
 import './index.scss'
-import Logos from '../../../assets/images/j.png'
-import LogoSub from '../../../assets/images/o.png'
+// import Logos from '../../../assets/images/j.png'
+// import LogoSub from '../../../assets/images/o.png'
 const Logo =()=>{
 
   return(
       <div className='logo-container' >
           <div className='firstlogo'>
-          <img className='solid-logo1' src= {Logos}  alt = 'Joan'/>
+          {/* <img className='solid-logo1' src= {Logos}  alt = 'Joan'/> */}
           <svg
             width="400pt"
             height="550pt"
@@ -33,7 +33,7 @@ const Logo =()=>{
           </svg>
           </div>
           <div className='secondlogo'>
-          <img className='solid-logo2' src= {LogoSub}  alt = 'Web Developer'/>
+          {/* <img className='solid-logo2' src= {LogoSub}  alt = 'Web Developer'/> */}
           <svg
             width="400pt"
             height="550pt"

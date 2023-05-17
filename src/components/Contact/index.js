@@ -12,6 +12,7 @@ const Contact= ()=>{
 
 // adding a ref hook for email js
     const refForm = useRef();
+    
     useEffect(()=>{
         setTimeout(() => {
             setLetterClass('text-animate-hover')
@@ -41,8 +42,8 @@ const Contact= ()=>{
     const position = [6.74989, -1.58908]
 return(
     <>
-    <div className ='container contact-page'>
-       <div className='text-zone'>
+    <div className ='contact-page'>
+       <div className='item text-zone'>
             <h1>
             <AnimatedLetters
                 strArray={contact_array}
@@ -106,6 +107,7 @@ return(
                 </form>
             </div>
         </div> 
+       <div className='item map-box'>
        <div className='info-map'>
         Joana Konadu Owusu <br/>
         Kumasi - Ghana <br/>
@@ -113,15 +115,16 @@ return(
         <span>joanaowusu8@gmail.com </span>
         </div> 
         <div className='map-wrap'>
-        <MapContainer center={position} zoom={13} scrollWheelZoom={true}>
-  <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-  <Marker position={position}>
-    <Popup>
-      I work here.Visit me for a discussion:) 
-    </Popup>
-  </Marker>
-</MapContainer>
+            <MapContainer center={position} zoom={13} scrollWheelZoom={true}>
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+            <Marker position={position}>
+            <Popup>
+            I work here.Visit me for a discussion:) 
+            </Popup>
+            </Marker>
+            </MapContainer>
         </div>
+       </div>
     </div>
     <Loader type="square-spin" />
     </>

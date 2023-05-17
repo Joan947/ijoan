@@ -3,14 +3,14 @@ import {Link, NavLink} from 'react-router-dom';
 import LogoS from '../../assets/images/name_logo2.png'
 import LogoSubtitle from '../../assets/images/name_logo1.png'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {faHome, faUser, faEnvelope, faSuitcase } from '@fortawesome/free-solid-svg-icons'
 import {faLinkedin, faGithub, faTwitter} from '@fortawesome/free-brands-svg-icons'
 
 const SideBar = ()=>(
     <div className='nav-bar'>
         <Link className= 'logo' to = '/'>
             <img src={LogoS} alt= "logo"/>
-            <img className= 'sub-logo'src={LogoSubtitle} alt= "konadu"/>
+            <img className= 'sub-logo'src={LogoSubtitle} alt= "joana"/>
         </Link>
         <nav>
             <NavLink exact= "true" activeclassname= "active" to= '/'>
@@ -23,6 +23,14 @@ const SideBar = ()=>(
             to= '/about'
             >
                 <FontAwesomeIcon icon={faUser} color="#86B616" />
+            </NavLink>
+            <NavLink 
+            exact= "true" 
+            activeclassname= "active" 
+            className= "portfolio-link" 
+            to= '/portfolio'
+            >
+                <FontAwesomeIcon icon={faSuitcase} color="#86B616" />
             </NavLink>
             <NavLink exact= "true" 
             activeclassname= "active" 

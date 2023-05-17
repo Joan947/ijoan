@@ -20,8 +20,8 @@ const Home = ()=> {
     
     return  (
         <>
-        <div className= "container home-page">
-           <div className = "text-zone">
+        <div className= "home-page">
+           <div className = "item text-zone">
                 <h1>
                     <span className= {letterClass}>H</span>
                     <span className={`${letterClass} _10`}>i</span>
@@ -46,10 +46,9 @@ const Home = ()=> {
                 <h2> I'm a Web Developer / Machine Learning Developer/ A Data Analyst</h2>
                 <Link to= "/contact"  className='flat-button'> CONTACT ME</Link>
             </div>  
-            <div>
+            <div className=' item logo-box'>
             <Logo/>
             </div>  
-            
         </div>
         <Loader type="square-spin"/>
         </>

@@ -9,7 +9,9 @@ const Layout = ()=>
             <SideBar/>
             <div className='page'>
                 <span className='tags top-tags'>&lt;body&gt;</span>
+                <div className='container'>
                 <Outlet/>
+                </div>
                 <span className='tags bottom-tags'>
                     &lt;/body&gt;
                     <br/>

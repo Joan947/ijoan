@@ -1,30 +1,13 @@
 
 .logo-container{
-    transform: translateY(70px) rotate(-10deg);
-    z-index: 0;
-    width: 535px;
-    height: 670px;
-    position: absolute;
+    transform: translateY(40px) rotate(-12deg);
     max-height: 90%;
-    right: 10%;
-    left: auto;
-    margin: auto;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    // align-items: center;
-   
+    flex-wrap: nowrap;
+    
     .firstlogo{
-        flex-basis:50%;
-        .solid-logo1{
-            position: absolute;
-            width: auto;
-            height: 400px;
-            //transform: rotateZ(30deg);
-            z-index: 1;
-            opacity: 0;
-            animation: fadeIn 8s 8s forwards;  
-                      
-        }
+        flex: 1 1;
         svg{
             width: auto;
             height: 400px;
@@ -32,8 +15,27 @@
                 stroke:#CCA300;
                 stroke-width:1;
                 stroke-miterlimit:2.61313;
-                box-shadow: 0 0 20px 0px #cca300; 
-                
+                //opacity: 0;
+                animation: fill 8s 8s forwards;
+
+                @keyframes fill {
+                    0% {
+                        fill: rgba(0, 0, 0, 0.1);  /* Start color */
+                      }
+                      25% {
+                        fill: rgba(0, 0, 0, 0.25); /* Intermediate color */
+                      }
+                      50% {
+                        fill: rgba(0, 0, 0, 0.5); /* Intermediate color */
+                      }
+                      75% {
+                        fill: rgba(0, 0, 0, 0.75); /* Intermediate color */
+                      }
+                      100% {
+                        fill: rgba(0, 0, 0, 1); /* End color */
+                      }
+                }
+                                
             }
             #draw-svg{
                 stroke-dasharray: 2669;
@@ -45,23 +47,34 @@
         }  
     }
     .secondlogo{
+        flex: 1 1;
         transform: translateX(-35px);
-        .solid-logo2{
-            position: absolute;
-            width: auto;
-            height: 400px;
-            z-index: 1;
-            opacity: 0;
-            animation: fadeIn 8s 10s forwards;
-        }
         svg{
-            position: absolute;
+            //position: absolute;
             width: auto;
             height: 400px;
             .svg-container2{
                 stroke:#86B616;
                 stroke-width:1;
                 stroke-miterlimit:2.61313;
+                animation: fill 8s 10s forwards;
+                @keyframes fill {
+                    0% {
+                        fill: rgba(0, 0, 0, 0.1);  /* Start color */
+                      }
+                      25% {
+                        fill: rgba(0, 0, 0, 0.25); /* Intermediate color */
+                      }
+                      50% {
+                        fill: rgba(0, 0, 0, 0.5); /* Intermediate color */
+                      }
+                      75% {
+                        fill: rgba(0, 0, 0, 0.75); /* Intermediate color */
+                      }
+                      100% {
+                        fill: rgba(0, 0, 0, 1); /* End color */
+                      }
+                }
             }
             #draw-svg2{
                 stroke-dasharray: 4017;
@@ -90,4 +103,5 @@
             stroke-dashoffset: 0;
          }
     }
+    
 }

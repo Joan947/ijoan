@@ -20,8 +20,8 @@ const About = ()=>{
     
        return(
         <>
-        <div className='container about-page'>
-            <div className='text-zone'>
+        <div className='about-page'>
+            <div className=' item text-zone'>
                 <h1>
                     <AnimatedLetters
                         strArray={abtarray}
@@ -54,7 +54,7 @@ const About = ()=>{
                 </p>
 
             </div>
-            <div className='stage-cube-count'>
+            <div className=' item stage-cube-count'>
                 <div className='cube-spinner'>
                     <div className='face1'>
                         <FontAwesomeIcon icon={faReact} color ='#61DBFB'/>

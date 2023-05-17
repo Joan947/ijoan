@@ -1,74 +1,85 @@
 .home-page{
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
     .text-zone{
-        position: absolute;
-        display: block;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
+        flex: 1 0;
+        margin-left: 10%;
+        margin-top: 10%;
+        transform: translateY(-10%);
         max-height: 90%;
+        h1{
+            color:#fff ;
+            font-size: 53px;
+            margin: 0;
+            font-family: 'Futura';
+            font-weight: 400;
+            &::before{
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                color: #cca300;
+                margin-top: -40px;
+                position: absolute;
+                font-size: 18px;
+                left: 15px;
+                opacity: 0.6;
+            }
+            &::after{
+                content: '</h1>';
+                font-family: 'La Belle Aurore';
+                color: #cca300;
+                margin-top: 5em;
+                left: 0%;
+                position: absolute;
+                font-size: 18px;
+                margin-left: 10px;
+                animation: fadeIn 1s 1.7s backwards;   
+                opacity: 0.6;                 
+            }
+            img{
+                width: 32px;
+                margin-left: 20px;
+                height: auto;
+                opacity: 0;
+                animation: rotateIn 1s 1.4s linear both;
+            }
+        }
+        h2{
+            margin-top: 4em;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 400;
+            font-family: sans-serif;
+            letter-spacing: 3px;
+            animation: fadeIn 1s 1.8s backwards;
+        }
+        .flat-button{
+            color:#86b616;
+            font: 400 13px sans-serif;
+            letter-spacing: 4px;
+            text-decoration: none;
+            padding: 10px 18px;
+            border: 1px solid #86b616;
+            margin-top: 25px;
+            float: left;
+            white-space: nowrap;
+            animation: fadeIn 1s 1.8s backwards;
+    
+            &:hover{
+                background-color: #86b616;
+                color: #000;
+            }
+        }
+    }
+    .logo-box{
+        flex: 1 0;
+        margin-right: 5%;
+    }
 
-    }
-    h1{
-        color:#fff ;
-        font-size: 53px;
-        margin: 0;
-        font-family: 'Futura';
-        font-weight: 400;
-        &::before{
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: #cca300;
-            margin-top: -40px;
-            position: absolute;
-            font-size: 18px;
-            left: 15px;
-            opacity: 0.6;
+    @media (min-width:368px) and (max-width: 950px){
+        .item {
+          flex: 1 0 100%; 
         }
-        &::after{
-            content: '</h1>';
-            font-family: 'La Belle Aurore';
-            color: #cca300;
-            margin-top: 5em;
-            left: 0%;
-            position: absolute;
-            font-size: 18px;
-            margin-left: 10px;
-            animation: fadeIn 1s 1.7s backwards;   
-            opacity: 0.6;                 
-        }
-        img{
-            width: 32px;
-            margin-left: 20px;
-            height: auto;
-            opacity: 0;
-            animation: rotateIn 1s 1.4s linear both;
-        }
-    }
-    h2{
-        margin-top: 4em;
-        color: #fff;
-        font-size: 11px;
-        font-weight: 400;
-        font-family: sans-serif;
-        letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
-    }
-    .flat-button{
-        color:#86b616;
-        font: 400 13px sans-serif;
-        letter-spacing: 4px;
-        text-decoration: none;
-        padding: 10px 18px;
-        border: 1px solid #86b616;
-        margin-top: 25px;
-        float: left;
-        white-space: nowrap;
-        animation: fadeIn 1s 1.8s backwards;
-
-        &:hover{
-            background-color: #86b616;
-            color: #000;
-        }
-    }
+      }
+    
 }
