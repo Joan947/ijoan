@@ -3,7 +3,7 @@
     height: 100%;
     min-height: 500px;
     position: absolute;
-    overflow: auto;
+    overflow: hidden auto;
     margin: 0;
     padding: 0;
 }
@@ -23,6 +23,8 @@
 }
 
 .bottom-tags{
+    //position: relative;
+   // top: 90%;
     margin-top: 6px;
     margin-bottom: 0;
     height: 5%;
@@ -34,11 +36,10 @@
 .container{
     width: 100%;
     min-height: 500px;
-    height: 90%;
-
-    position: relative;
-    z-index: 1;
-    top: 0%;
+    //height: 90%;
+    // position: relative;
+    // z-index: 1;
+    // top: 0%;
     margin: 0 auto;
     opacity: 0;
     will-change: contents;

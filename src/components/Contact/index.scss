@@ -1,9 +1,11 @@
 .contact-page{
     display: flex;
     flex-wrap: wrap;
+    //height: max-content;
     min-width:0;
-    height: inherit;
-    justify-content: space-between;
+    align-items: stretch;
+    //height: inherit;
+    //justify-content: space-between;
     .text-zone{
         flex: 1 1;
         margin-left: 10%;
@@ -27,19 +29,19 @@
            }
             .first-half{  
             display: flex; 
-            flex-flow: row nowrap;         
+            flex-flow: row wrap;  
             justify-content: space-between; 
             li{
-                flex: 1;
-                margin-left: 2%;
-                &:first-child{
-                    margin-left: 0;  
-                }
+                flex: 0 1 auto;
+                width: 49%;
+                // &:first-child{
+                //     margin-left: 0;  
+                // }
             }
             }
            .second-half{  
                display: flex; 
-               flex-flow: column wrap;         
+               flex-flow: column;         
            }
             input[type='text'],
             input[type ='email']{
@@ -96,7 +98,7 @@
     
    .map-box{
     flex: 1.5 1;
-    padding:0 5%;
+    padding-left: 5%;
     
    
     .info-map{
@@ -133,7 +135,7 @@
         animation: backInRight 1s 1.2s forwards;
     }
    }
-   @media (min-width:368px) and (max-width: 950px){
+    @media (min-width:368px) and (max-width: 950px){
     .item {
       flex: 1 1 100%; 
     }
@@ -143,17 +145,24 @@
     .map-box{
         height: 55% ;
         padding-left: 10% !important;
+        padding-right: 5% !important;
 
     }
     .info-map {
-        top: 45% !important;
-        left: 35% !important;
-        width: 28% !important;
+        position: relative !important;
+        top: 0 !important;
+        left: 10% !important;
+        width: max-content !important;
     }   
     .map-wrap{
         top: 18%;
         height: 80% !important;
         margin-top: 0 !important;
     }
-}
+    }
+    @media (min-width:368px) and (max-width: 600px){
+        .first-half > li{
+            flex: 1 1 100% !important;
+        }
+    }
 }

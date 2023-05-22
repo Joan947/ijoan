@@ -1,32 +1,118 @@
 .portfolio-page{
+    height: inherit;
+    width: inherit;
     h1{
-        left: 10%;
-        top: 5%;
+         margin-left: 10%;
+         margin-right: 0;
+         width: 25%;
+         margin-top: 5% !important;
     }
     
     .images-container{
         display: flex;
         gap: 15px;
-        flex-wrap: wrap;
-        margin-left: 100px;
-        margin-top: 100px;
-        padding-bottom: 100px;
-    }
-    .img-box{
-       // position: relative;
-        flex: 1 1 20%;
-        overflow: hidden;
-        border-radius: 5px;
-        height: 400px;
-        max-width: calc(25% - 10px);
-        background-color: #88c;
+        flex-wrap: wrap; 
+        margin: 100px;
+        margin-right: 80px!important;
+        width: inherit;
+        height:auto ;
+   
+         .img-box{
+            position: relative;
+            flex: 1 1 20%;
+            overflow: clip;
+            border-radius: 5px;
+            height: 400px;
+            min-width: 250px;
+            max-width: calc(25% - 10px);
+            background-color: #88c;
 
-        .portfolio-image{
-            //position:absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 2;
+            .portfolio-image{
+                position:absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 2;
+            }
+            .content{
+                position: absolute;
+                height: auto;
+                padding: 10px 20px;
+                z-index: 5;
+                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                background: linear-gradient(180deg, 
+                            rgba(0,0,0,0.4),
+                            rgba(0,0,0,1));
+                bottom: -70px;
+                
+                .title{
+                    font-size: 24px;
+                    font-weight: 700;
+                    //font-style: bold;
+                    line-height: 20px;
+                    // color: #cca300;
+                    color: #86b616;
+                }
+                .description{
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 20px;
+                }
+                .btn{
+                    position: relative;
+                    color:#86b616;
+                    z-index: 10;
+                    font: 400 13px sans-serif;
+                    margin-bottom: 10px;
+                    padding: 0 18px;
+                    border: 1px solid #86b616;
+                    border-radius: 3px;
+                    margin-top: 25px;
+                    font-size: 14px;
+                    background: transparent;
+                    text-transform: uppercase;
+                    line-height: 35px;
+                    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    //transition: all 0.3s ease-in-out;
+                    cursor: pointer;    
+                    &:hover{
+                        background-color: #86b616;
+                        color: #000;
+                        //translate: transformX(10px);
+                        padding-right: 25px;
+                    }
+                }
+                    &:hover.content{
+                    bottom: 0;
+                    background: transparent;
+                    .title{
+                       
+                        color: #cca300;
+                        font-size: 27px;
+                        
+                    }
+                } 
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                background: linear-gradient(180deg, rgba(0,0,0,0.5),
+                rgba(0,0,0,1));
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                bottom: 0;
+                top: 0;
+                right: 0;
+                transition: all 0.3s ease-in-out;
+                opacity: 0;
+
+            }
+            &:hover:after{
+                opacity: 0.8;   
+            }
+           
         }
     }
 }

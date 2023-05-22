@@ -29,9 +29,15 @@ const Portfolio =()=>{
                         src={process.env.PUBLIC_URL + props.cover}
                         alt="cover"
                         />
-                        <div className="content">
-                            <p className="title">{props.name}</p>
+                        <div className="content"
+                            style={
+                                {width: props.description.length > 50 ?'auto' : '100%'
+                            }}
+                        >  <p className="title">{props.name}</p>
                             <h4 className="description">{props.description}</h4>
+                            <button 
+                            className="btn"
+                            onClick={()=>window.open(props.url)}>View</button>
                         </div>
                     </div>
                 )

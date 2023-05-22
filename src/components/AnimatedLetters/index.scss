@@ -9,10 +9,11 @@
     min-width: 10px;
     display: inline-block;
     animation-fill-mode: both; 
-    
-    &:hover{
+    font-size: 53px;
+   &:hover{
         animation: rubberBand 1s;
         color: #CCA300;
+        
     }
 }
 @for $i from 1 through 39{
