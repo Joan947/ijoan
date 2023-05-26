@@ -1,7 +1,26 @@
 html{
   scroll-behavior: smooth;
 }
-
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../public/fonts/Helvetica.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Futura';
+  src: url('../public/fonts/futura.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('../public/fonts/LaBelleAurore-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('../public/fonts/coolvetica-rg.otf') format('otf');
+}
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('../public/fonts/Roboto-Light.ttf') format('ttf');
+}
 body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica','sans-serif';
