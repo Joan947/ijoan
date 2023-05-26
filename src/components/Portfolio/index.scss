@@ -4,7 +4,7 @@
     h1{
          margin-left: 10%;
          margin-right: 0;
-         width: 25%;
+         width: auto;
          margin-top: 5% !important;
     }
     
@@ -16,6 +16,7 @@
         margin-right: 80px!important;
         width: inherit;
         height:auto ;
+        justify-content: center;
    
          .img-box{
             position: relative;
@@ -24,10 +25,9 @@
             border-radius: 5px;
             height: 400px;
             min-width: 250px;
-            max-width: calc(25% - 10px);
+            max-width: calc(30% - 10px);
             background-color: #88c;
-
-            .portfolio-image{
+             .portfolio-image{
                 position:absolute;
                 width: 100%;
                 height: 100%;
@@ -39,12 +39,11 @@
                 height: auto;
                 padding: 10px 20px;
                 z-index: 5;
-                transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+                transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
                 background: linear-gradient(180deg, 
                             rgba(0,0,0,0.4),
                             rgba(0,0,0,1));
                 bottom: -70px;
-                
                 .title{
                     font-size: 24px;
                     font-weight: 700;
@@ -77,14 +76,14 @@
                     cursor: pointer;    
                     &:hover{
                         background-color: #86b616;
-                        color: #000;
+                        color: #000 ;
                         //translate: transformX(10px);
                         padding-right: 25px;
                     }
                 }
-                    &:hover.content{
+                &:hover.content{
                     bottom: 0;
-                    background: transparent;
+                   // background: transparent;
                     .title{
                        
                         color: #cca300;
@@ -93,25 +92,25 @@
                     }
                 } 
             }
-            &:after{
-                content: '';
+            .icon{
+                font-size: 22px;
+                display: block;
                 position: absolute;
                 background: linear-gradient(180deg, rgba(0,0,0,0.5),
                 rgba(0,0,0,1));
                 z-index: 2;
                 width: 100%;
                 height: 100%;
-                left: 0;
-                bottom: 0;
-                top: 0;
-                right: 0;
+                padding-left: calc(50% - 12px);
+                padding-top: 5%;
+                //right: auto;
                 transition: all 0.3s ease-in-out;
                 opacity: 0;
-
+                &:hover.icon{
+                    opacity: 1;   
+                }
             }
-            &:hover:after{
-                opacity: 0.8;   
-            }
+            
            
         }
     }

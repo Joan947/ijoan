@@ -3,6 +3,8 @@ import "./index.scss";
 import AnimatedLetters from "../AnimatedLetters";
 import Loader from "react-loaders";
 import portfolioData from "../../data/portfolio.json";
+import{faArrowDown} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Portfolio =()=>{
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -39,6 +41,10 @@ const Portfolio =()=>{
                             className="btn"
                             onClick={()=>window.open(props.url)}>View</button>
                         </div>
+                        <div className="icon">
+                            <FontAwesomeIcon icon={faArrowDown} 
+                            color="#cca300" />
+                        </div>
                     </div>
                 )
                })
@@ -54,7 +60,7 @@ const Portfolio =()=>{
             <h1>
                 <AnimatedLetters
                 letterClass={letterClass}
-                strArray={"Portfolio".split('')}
+                strArray={"Projects".split('')}
                 index={15}
                 />
             </h1>

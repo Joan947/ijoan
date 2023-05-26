@@ -3,8 +3,8 @@
     flex-wrap: wrap;
     height: inherit;
     .text-zone{
-        flex: 1 0;
-        min-width: 490px;
+        flex: 1 1;
+        min-width: 450px;
         margin-left: 10%;
         margin-top: 10%;
         transform: translateY(-10%);
@@ -73,14 +73,104 @@
         }
     }
     .logo-box{
-        flex: 1 0;
+        flex: 1 1;
         margin-right: 5%;
     }
 
-    @media (min-width:368px) and (max-width: 950px){
-        .item {
-          flex: 1 0 100%; 
-        }
-      }
+    // @media (min-width:368px) and (max-width: 950px){
+    //     .item {
+    //       flex: 1 0 100%; 
+    //     }
+    //   }
     
 }
+// mobile devices
+@media screen and (max-width: 950px){
+    
+
+    .home-page{
+        display: block !important;
+       
+        .flat-button{
+            // float: none;
+            // display: block;
+            // margin: 20px auto 0 auto;
+            // width: 125px;
+
+        }
+        .logo-box{
+            width: auto;
+            height: auto;
+            text-align: center !important;
+        }
+        .logo-container{
+           //display: block;
+           //position: relative;
+          // width:  100px;
+           //max-height: 45%;
+           box-sizing: border-box;
+           margin: auto;
+           //right: 0;
+           //top: 50px;
+           
+        }
+        svg{
+            //position: absolute;
+            top: auto;
+            left: 0;
+            width: auto;
+            //right: auto;
+            margin: auto;
+        }
+    }
+    @media screen and (max-width: 660px){
+    
+        .home-page
+         {
+             .text-zone{
+                 position: initial;
+                 width: 100%;
+                 min-width: auto;
+                 transform: none;
+                 box-sizing: border-box;
+                 padding: 10px;
+                 margin: auto 10px;
+                 
+             }
+             svg{
+                 height: 200px !important;
+             }
+         }
+         .tags,
+         .home-page h1::before,
+         .home-page h1::after {
+             display: none;
+         }
+        
+     }
+     @media screen and (max-width: 380px){
+        .home-page
+        {
+            .text-zone{
+                
+                h1, 
+            h1>*span, 
+            h1>span.text-animate-hover
+            {font-size: 42px !important;}
+            }
+            
+        }
+        }
+     @media screen and (min-width: 481px){
+         .home-page
+         {
+            
+         svg{
+             height: 300px !important;
+         }
+         }
+     } 
+} 
+
+   
+

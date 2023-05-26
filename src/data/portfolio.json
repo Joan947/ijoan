@@ -44,6 +44,45 @@
             "name":"E-Commerce",
             "description":"An react e-commerce site.",
             "url":"https://www.youtube.com/"
+        },
+        {
+            "cover":"/portfolio/1/css-portfolio.jpg",
+            "name":"Simple Portfolio",
+            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
+            "url":"https://www.youtube.com/"
+        },
+       
+        {
+            "cover":"/portfolio/1/e-commerce.png",
+            "name":"E-Commerce",
+            "description":"An react e-commerce site.",
+            "url":"https://www.youtube.com/"
+        },
+        {
+            "cover":"/portfolio/1/h.jpg",
+            "name":"Simple Portfolio",
+            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
+            "url":"https://www.youtube.com/"
+        },
+       
+        {
+            "cover":"/portfolio/1/e-commerce.png",
+            "name":"E-Commerce",
+            "description":"An react e-commerce site.",
+            "url":"https://www.youtube.com/"
+        },
+        {
+            "cover":"/portfolio/1/h.jpg",
+            "name":"Simple Portfolio",
+            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
+            "url":"https://www.youtube.com/"
+        },
+       
+        {
+            "cover":"/portfolio/1/brand-website.jpg",
+            "name":"E-Commerce",
+            "description":"An react e-commerce site.",
+            "url":"https://www.youtube.com/"
         }
     ]
 }

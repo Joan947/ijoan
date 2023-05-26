@@ -9,7 +9,9 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-
+   .hamburger-icon, .close-icon{
+    display: none;
+   }
    .logo{
     display: block;
     padding: 8px 0;
@@ -78,9 +80,14 @@
             content: 'ABOUT';
             }
         }
+        a.skills-link{
+            &:after{
+            content: 'SKILLS';
+            }
+        }
         a.portfolio-link{
             &:after{
-            content: 'PORTFOLIO';
+            content: 'PROJECTS';
             letter-spacing: 1px;
             }
         }
@@ -99,7 +106,11 @@
 
     ul{
        // position: relative;
-        display: block;
+        //display: block;
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        //gap: 8%;
         list-style: none;
         text-align: center;
         margin: 0;
@@ -116,9 +127,83 @@
                 line-height: 16px;
 
                 &:hover svg{
-                    color:#D8973C;
+                    color:#CCA300;
                 }
             }
         }
     }
 }
+
+@media screen and (max-width: 680px){
+    .nav-bar{
+        position: initial;
+        width: 100%;
+        background: transparent;
+        height: auto;
+        min-height: auto;
+    
+    ul, nav {display: none;}
+    nav{
+        height: 60%;
+        //background-color: #000000;
+        position: absolute;
+        top: 0;
+        padding-top: 12%;
+       // padding-bottom: 6%;
+        left:0;
+        z-index: 4;
+        a{
+            padding-bottom: 15px;
+            font-size: 25px;
+            svg{
+                opacity: 0 !important;
+            }
+            &:after{
+                left: 0;
+                margin-left: 0 !important;  
+                opacity: 1 !important;
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: 4px !important;
+            }
+        }
+        &.mobile-nav{display: block !important; }
+    }
+    ul{
+        width: 100%;
+       
+        background-color: #000000;
+        position: absolute;
+        padding: 30px auto;
+        top: 0%;
+        left:0;
+        right: 0    ;
+        z-index: 3;
+        li > a{
+            font-size: 22px !important;
+        }
+        &.mobile-nav{
+            display: flex;
+            flex-direction: row !important;
+            justify-content: center;
+            height: 55%;
+            align-items: flex-end !important;
+            gap: 9%;
+        }
+     }
+    
+    .hamburger-icon, .close-icon{
+        display: block !important;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    }
+
+    @media screen and (max-height: 760px) {
+        ul.mobile-nav{
+                height: 80% !important;
+            }
+         
+    }
+  }

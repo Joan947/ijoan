@@ -1,13 +1,11 @@
 .contact-page{
     display: flex;
     flex-wrap: wrap;
-    //height: max-content;
-    min-width:0;
-    align-items: stretch;
-    //height: inherit;
+   height: auto;
     //justify-content: space-between;
     .text-zone{
         flex: 1 1;
+        
         margin-left: 10%;
         text-align: justify;
         max-height: 90%;
@@ -98,6 +96,7 @@
     
    .map-box{
     flex: 1.5 1;
+    
     padding-left: 5%;
     
    
@@ -135,29 +134,35 @@
         animation: backInRight 1s 1.2s forwards;
     }
    }
-    @media (min-width:368px) and (max-width: 950px){
+  
+}
+  @media (min-width:268px) and (max-width: 950px){
     .item {
-      flex: 1 1 100%; 
+      flex: 1 1 100% !important; 
     }
-    .text-zone{
-        height: fit-content !important;
-    }
-    .map-box{
-        height: 55% ;
-        padding-left: 10% !important;
-        padding-right: 5% !important;
-
-    }
-    .info-map {
-        position: relative !important;
-        top: 0 !important;
-        left: 10% !important;
-        width: max-content !important;
-    }   
-    .map-wrap{
-        top: 18%;
-        height: 80% !important;
-        margin-top: 0 !important;
+    .contact-page{
+        height: fit-content;
+        .text-zone{
+            max-height: auto !important;
+        }
+        .map-box{
+           // height: 55% ;
+            padding-left: 10% !important;
+            padding-right: 5% !important;
+            max-height: fit-content !important;
+        }
+        .info-map {
+           position:  initial !important;
+            top: 0 !important;
+            left: 10% !important;
+            width: max-content !important;
+        }   
+        .map-wrap{
+            height: 350px !important;
+        }
+        .leaflet-container{
+            height: 300px;
+            }
     }
     }
     @media (min-width:368px) and (max-width: 600px){
@@ -165,4 +170,3 @@
             flex: 1 1 100% !important;
         }
     }
-}

@@ -8,7 +8,7 @@ const Layout = ()=>
         <div className='App'>
             <SideBar/>
             <div className='page'>
-                <span className='tags top-tags'>&lt;body&gt;</span>
+                 <span className='tags top-tags'>&lt;body&gt;</span>
                 <div className='container'>
                 <Outlet/>
                 </div>

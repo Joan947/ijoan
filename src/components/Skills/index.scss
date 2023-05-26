@@ -1,0 +1,278 @@
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+    height: inherit;
+    
+    .text-zone{
+        flex: 1 1;
+        margin-left: 10%;
+        text-align: justify;
+        max-height: 90%;
+        padding-right:5% ;
+        p>span{
+            display: inline;
+            color: #cca300;
+          
+        }
+        p>a{
+            color: #cca300;
+            margin-left: 5px;
+            &:hover{ color: white;}
+        }
+    }
+    
+
+    .stage-cube-count{
+        flex: 1.2 1;  
+        opacity: 0;
+        animation: fadeIn 5s 4s forwards;
+        padding-top: 10% ;
+        margin-left: 0;
+        overflow: hidden;
+        height: 400px;
+        background: radial-gradient(ellipse at bottom, #000 0%, #86b6161b 100%);
+        
+        .cube-spinner{
+        animation:spinner 12s ease-in-out infinite;
+        transform-style: preserve-3d;
+        transform-origin: 100px 100px 0;
+        margin-left: calc(50% - 100px);
+
+        div{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #86b616;
+            background: #0000000b; 
+            font-size: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px 0px #86b616;
+            
+            
+        }
+        .face1{
+            transform: translateZ(100px);
+        }
+        .face2{
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .face3{
+            transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+        }
+        .face4{
+            transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        }
+        .face5{
+            transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        }
+        .face6{
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .face7,.face8,.face9,.face10,.face11,.face12{
+            display: none;
+        }
+       
+        @keyframes spinner {
+        from ,
+        to{
+            transform: rotateX(0deg)  rotateY(0deg)  rotateZ(0deg);
+        }
+        16%{
+            transform:  rotateY(-90deg);
+        }
+        33%{
+            transform:  rotateY(-90deg)  rotateZ(90deg);
+        }
+        50%{
+            transform:  rotateY(-180deg)  rotateZ(90deg);
+        }
+        66%{
+            transform:  rotateY(-270deg)  rotateZ(90deg);
+        }
+        83%{
+            transform:  rotateX(90deg);
+        }
+        }
+        }
+    }
+}    
+@media (min-width:268px) and (max-width: 950px){
+    #skills{
+        align-content: flex-start !important;
+        h1, 
+        h1>span>*span, 
+        h1>span>span.text-animate-hover
+        {font-size: 45px !important;}
+    .item {
+      flex: 1 1 100%; 
+    }
+    
+    .stage-cube-count{
+        .cube-spinner{
+            animation: slider 14s linear infinite forwards;
+            //margin-left: calc(50%);
+            height: 200px;
+        
+            div{
+                position: absolute;
+                width: 140px;
+                height: 140px;
+                border: 1px solid #86b616;
+                background: #0000000b; 
+                font-size: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 20px 0px #86b616;
+            }
+            .face7,.face8,.face9,.face10,.face11,.face12{
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+            }
+            .face1{
+                transform: translateX(-750px);
+            }
+            .face2{
+                transform:  translateX(-600px);
+            }
+            .face3{
+                transform:   translateX(-450px);
+            }
+            .face4{
+                transform:   translateX(-300px);
+            }
+            .face5{
+                transform:   translateX(-150px);
+            }
+            .face6{
+                transform:  translateX(0px);
+            }
+            .face7{
+                transform:  translateX(150px) !important;
+            }
+            .face8{
+                transform:  translateX(300px)!important;
+            }
+            .face9{
+                transform:  translateX(450px)!important;
+            }
+            .face10{
+                transform:  translateX(600px)!important;
+            }
+            .face11{
+                transform:  translateX(750px)!important;
+            }
+            .face12{
+                transform:  translateX(900px)!important;
+            }
+            
+            @keyframes slider {
+            from ,
+            0%{
+                transform:  translateX(100%);
+            }
+            
+            100%{
+                transform:  translateX(-100%);
+            }
+            } 
+        }
+    }
+    }
+   
+  
+@media screen and (max-width: 480px){
+    #skills.text-zone{
+        // padding: 6%;
+        margin-left: 5% !important;
+        height: fit-content;
+    }
+}
+@media screen and (min-width: 480px){
+    #skills.text-zone{
+        padding: 6%;
+        height: fit-content;
+    }
+}    
+}
+
+// to create the moving stars effect
+//first create a function to generate and return random
+//sizes of small boxes with any color
+//assign the function to variables and create
+// box shadows with the variables
+//animate the container for these box shadows
+@function multiple-box-shadow ($n){ 
+  $value: '#{random(2000)}px #{random(20000)}px #FFF';
+  @for $i from 2 through $n{
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+  }
+  @return unquote($value)
+}
+$shadows-small:  multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big:    multiple-box-shadow(100);
+
+    
+.stars{
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation	: animStar 50s linear infinite;
+
+  &:after{
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+  }
+}
+.stars2{
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation	: animStar 100s linear infinite;
+    
+  &:after{
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+} 
+.stars3{
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $shadows-big;
+  animation	: animStar 150s linear infinite;
+    
+  &:after{
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+  }
+}
+@keyframes animStar{
+  from	{
+    transform: translateY(0px)}
+  to{		
+    transform: translateY(-2000px)}
+  }
+    
