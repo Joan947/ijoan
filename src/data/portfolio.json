@@ -4,85 +4,33 @@
             "cover":"/portfolio/1/brand-website.jpg",
             "name":"GYE WO DIN",
             "description":"A brand website designed using HTML, CSS and Vanilla JS",
-            "url":"youtube.com"
+            "url":"https://github.com/Joan947/brand-website"
         },
         {
             "cover":"/portfolio/1/css-portfolio.jpg",
             "name":"Simple Portfolio",
-            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
-            "url":"https://www.youtube.com/"
+            "description":"A portfolio website designed with HTML, SASS, CSS and React",
+            "url":"https://github.com/Joan947/ijoan"
         },
        
         {
-            "cover":"/portfolio/1/e-commerce.png",
-            "name":"E-Commerce",
-            "description":"An react e-commerce site.",
-            "url":"https://www.youtube.com/"
+            "cover":"/portfolio/1/doll.png",
+            "name":"Graphics Collection",
+            "description":"A repository of my graphics projects",
+            "url":"https://github.com/Joan947/GraphicsPROJECTS"
         },
         {
-            "cover":"/portfolio/1/h.jpg",
-            "name":"Simple Portfolio",
-            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
-            "url":"https://www.youtube.com/"
-        },
-       
-        {
-            "cover":"/portfolio/1/e-commerce.png",
-            "name":"E-Commerce",
-            "description":"An react e-commerce site.",
-            "url":"https://www.youtube.com/"
-        },
-        {
-            "cover":"/portfolio/1/h.jpg",
-            "name":"Simple Portfolio",
-            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
-            "url":"https://www.youtube.com/"
+            "cover":"/portfolio/1/blog.png",
+            "name":"Simple Blog",
+            "description":"A blog designed using MERN stack",
+            "url":"https://github.com/Joan947/SimpleBlog"
         },
        
         {
-            "cover":"/portfolio/1/brand-website.jpg",
-            "name":"E-Commerce",
-            "description":"An react e-commerce site.",
-            "url":"https://www.youtube.com/"
-        },
-        {
-            "cover":"/portfolio/1/css-portfolio.jpg",
-            "name":"Simple Portfolio",
-            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
-            "url":"https://www.youtube.com/"
-        },
-       
-        {
-            "cover":"/portfolio/1/e-commerce.png",
-            "name":"E-Commerce",
-            "description":"An react e-commerce site.",
-            "url":"https://www.youtube.com/"
-        },
-        {
-            "cover":"/portfolio/1/h.jpg",
-            "name":"Simple Portfolio",
-            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
-            "url":"https://www.youtube.com/"
-        },
-       
-        {
-            "cover":"/portfolio/1/e-commerce.png",
-            "name":"E-Commerce",
-            "description":"An react e-commerce site.",
-            "url":"https://www.youtube.com/"
-        },
-        {
-            "cover":"/portfolio/1/h.jpg",
-            "name":"Simple Portfolio",
-            "description":"A portfolio website designed with CSS flexboxes, grid, animations and transitions.",
-            "url":"https://www.youtube.com/"
-        },
-       
-        {
-            "cover":"/portfolio/1/brand-website.jpg",
-            "name":"E-Commerce",
-            "description":"An react e-commerce site.",
-            "url":"https://www.youtube.com/"
+            "cover":"/portfolio/1/mobile.jpg",
+            "name":"Android Project",
+            "description":"An mobile app developed for the visually impaired incorporating Computer Vision and Machine Learning.",
+            "url":"https://github.com/Joan947/AndroidProject"
         }
     ]
 }
