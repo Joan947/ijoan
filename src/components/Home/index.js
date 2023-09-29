@@ -51,8 +51,7 @@ const Home = ()=> {
                 </h1>
                 <h2> I'm a Software Developer/ Research Assistant/ IT Coordinator</h2>
                 <Link to= "/contact"  className='flat-button'> CONTACT ME</Link>
-                <br/>
-                <button onClick={downloadCV} className='cvbutton'>DOWNLOAD CV</button>
+                <div><button onClick={downloadCV} className='cvbutton'>DOWNLOAD CV</button></div>
             </div>  
             <div className=' item logo-box'>
             <Logo/>
