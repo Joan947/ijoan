@@ -4,7 +4,7 @@
             "cover":"/portfolio/1/brand-website.jpg",
             "name":"GYE WO DIN",
             "description":"A brand website designed using HTML, CSS and Vanilla JS",
-            "url":"https://github.com/Joan947/brand-website"
+            "url":"https://joan947.github.io/brand-website/"
         },
         {
             "cover":"/portfolio/1/css-portfolio.jpg",
@@ -31,6 +31,18 @@
             "name":"Android Project",
             "description":"An mobile app developed for the visually impaired incorporating Computer Vision and Machine Learning.",
             "url":"https://github.com/Joan947/AndroidProject"
+        },
+        {
+            "cover":"/portfolio/1/car.jpg",
+            "name":"Self Driving Car Simulation",
+            "description":"An app to simulate a self driving car using a feed forward neural network, fitness function and genetic algorithms for detect collisions and find the best path.",
+            "url":"https://github.com/Joan947/ML_CAR_Game"
+        },
+        {
+            "cover":"/portfolio/1/addstudent.png",
+            "name":"Desktop Project",
+            "description":"Java Desktop Based School Management System with SQLLite.",
+            "url":"https://github.com/Joan947/DesktopProject"
         }
     ]
 }

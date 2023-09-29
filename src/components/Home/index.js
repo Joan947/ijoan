@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './index.scss'
 //import LogoTitle from "../../assets/images/logo-s.png";
+import CV from "../../assets/documents/Joana_Konadu_Owusu_CV.pdf"
 import {Link} from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import Logo from './Logo';
@@ -18,6 +19,12 @@ const Home = ()=> {
         }, 4000); 
     },[])
     
+    const downloadCV = () => {
+        const link = document.createElement('a');
+        link.href = process.env.PUBLIC_URL + {CV}; 
+        link.download = 'JoanaKonaduOwusu_CV.pdf'; 
+        link.click();
+      };
     return  (
         <>
         <div className= "home-page">
@@ -43,8 +50,9 @@ const Home = ()=> {
                     index={22}
                     />
                 </h1>
-                <h2> I'm a Web Developer / Machine Learning Developer/ A Data Analyst</h2>
+                <h2> I'm a Software Developer /Research Assistant/ IT Coordinator</h2>
                 <Link to= "/contact"  className='flat-button'> CONTACT ME</Link>
+                <button onClick={downloadCV} className='cvbutton'>DOWNLOAD CV</button>
             </div>  
             <div className=' item logo-box'>
             <Logo/>
