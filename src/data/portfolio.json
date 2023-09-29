@@ -33,7 +33,7 @@
             "url":"https://github.com/Joan947/AndroidProject"
         },
         {
-            "cover":"/portfolio/1/car.jpg",
+            "cover":"/portfolio/1/car.png",
             "name":"Self Driving Car Simulation",
             "description":"An app to simulate a self driving car using a feed forward neural network, fitness function and genetic algorithms for detect collisions and find the best path.",
             "url":"https://github.com/Joan947/ML_CAR_Game"
